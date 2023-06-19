@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.td{
+  @apply p-2  capitalize duration-300
+
+}
+
+
+.myScroll::-webkit-scrollbar {
+  @apply md:w-2 md:h-2 w-1 h-1
+}
+
+
+.myScroll::-webkit-scrollbar-thumb{
+  @apply bg-slate-800 rounded-full
+}
