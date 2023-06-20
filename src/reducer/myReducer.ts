@@ -23,6 +23,52 @@ type ACTION = {
     }
 }
 
+
+
+type TABLE = {
+  result:string,
+  cassa_1:string,
+  cassa_2:string,
+  bad:string,
+  deliver:string,
+  bn:string,
+  given:string
+
+}
+
+export const INITIAL_TABLE:TABLE = {
+result:'',
+cassa_1:'',
+cassa_2:'',
+bad:'',
+deliver:'',
+bn:'',
+given:''
+}
+
+type SECOND_ACTION = {
+  type:'CHANGE_VALUE',
+  payload:{
+    value:string,
+    name:string
+  }
+}
+
+export const secondReducer=(state:TABLE,action:SECOND_ACTION)=>{
+switch(action.type)
+{
+  case "CHANGE_VALUE" : return {...state , [action.payload.name]:action.payload.value}
+}
+
+}
+
+
+
+
+
+
+
+
 export const INITIA_STATE: STATE = {
   myState: [
     {

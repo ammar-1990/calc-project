@@ -17,3 +17,7 @@
 .myScroll::-webkit-scrollbar-thumb{
   @apply bg-slate-800 rounded-full
 }
+
+.input {
+  @apply p-2 flex-1 border outline-none rounded-md
+}
