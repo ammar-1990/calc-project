@@ -5,6 +5,7 @@ type STATES = {
   bad: string;
   remain: string;
   price: number;
+  drink?:boolean
  
 };
 
@@ -78,6 +79,8 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 169,
+
+    
       
     },
     {
@@ -152,6 +155,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 40,
+   
     },
     {
       name: "эспрессо",
@@ -160,6 +164,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 70,
+      drink:true
     },
     {
       name: "американо",
@@ -168,6 +173,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 70,
+      drink:true
     },
     {
       name: "латте",
@@ -176,6 +182,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 85,
+      drink:true
     },
     {
       name: "капучино",
@@ -184,6 +191,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 85,
+      drink:true
     },
     {
       name: "шоколад ",
@@ -192,6 +200,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 85,
+      drink:true
     },
     {
       name: "мокачино",
@@ -200,6 +209,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 85,
+      drink:true
     },
     {
       name: "шок с мол",
@@ -208,6 +218,7 @@ export const INITIA_STATE: STATE = {
       bad: '',
       remain: '',
       price: 85,
+      drink:true
     },
     {
       name: "лимонад 0,3",

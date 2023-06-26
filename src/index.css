@@ -21,3 +21,10 @@
 .input {
   @apply p-2 flex-1 border outline-none rounded-md
 }
+
+
+
+label {
+  @apply px-3 -mb-1 text-neutral-900 font-semibold
+}
+
