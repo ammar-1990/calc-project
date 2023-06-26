@@ -373,6 +373,7 @@ function App() {
                 ))}
               </tbody>
             </table>
+            <button className="p-3 text-white font-semibold bg-green-500 w-fit mx-auto rounded-lg mt-5" onClick={()=>dispatch({type:"RESET"})}>Новая смена</button>
           </div>
         </div>
         <button

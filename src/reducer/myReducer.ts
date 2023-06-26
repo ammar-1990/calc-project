@@ -16,13 +16,22 @@ type STATE = {
 
 
 type ACTION = {
-    type:'CHANGE_INPUT',
+    type:'CHANGE_INPUT' ,
     payload:{
         name:string,
         value:string,
         index:number
     }
 }
+
+
+type ACTION_TWO= {
+  type:'RESET',
+
+}
+
+type FIRST_ACTION = ACTION | ACTION_TWO
+
 
 
 
@@ -59,6 +68,7 @@ export const secondReducer=(state:TABLE,action:SECOND_ACTION)=>{
 switch(action.type)
 {
   case "CHANGE_VALUE" : return {...state , [action.payload.name]:action.payload.value}
+
 }
 
 }
@@ -296,7 +306,7 @@ export const INITIA_STATE: STATE = {
 };
 
 
-export const myReducer=(state:STATE,action:ACTION)=>{
+export const myReducer=(state:STATE,action:FIRST_ACTION)=>{
 
 
     switch(action.type)
@@ -309,6 +319,17 @@ else {
 }
 
         })}
+
+
+
+        case "RESET" : return {myState:INITIA_STATE.myState.map((el,i)=>({...el,first:state.myState[i].remain}))}
+
+        
+
+        
+      
+
+        
 
         default : return state
     }
