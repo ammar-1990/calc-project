@@ -4,7 +4,7 @@
 
 
 .td{
-  @apply p-2  capitalize duration-300 border border-slate-400
+  @apply py-2  capitalize duration-300 border border-slate-400 text-[8px]
 
 }
 

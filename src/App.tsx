@@ -77,7 +77,7 @@ function App() {
   return (
     <div className=" overflow-y-scroll h-screen  bg-slate-100">
       <div className="min-h-screen  flex justify-center p-3 flex-col ">
-        <div className="w-[90%] overflow-scroll mx-auto  myScroll">
+        <div className="w-full overflow-scroll mx-auto  myScroll">
           <div ref={firstRef} className="pb-20 w-fit flex  sm:w-full flex-col">
             <div className="p-4 font-bold text-xl text-center">
               TOTAL{" "}
@@ -88,17 +88,17 @@ function App() {
                 0
               )}
             </div>
-            <table className=" sm:w-[600px]   border-collapse mx-auto  border border-slate-400">
+            <table className="w-fit border-collapse mx-auto  border border-slate-400">
               <thead className="bg-slate-800 text-white sticky top-0">
                 <tr className="capitalize ">
-                  <td className="p-3 border-r border-white">наименование</td>
-                  <td className="p-3 border-r border-white">принято</td>
-                  <td className="p-3 border-r border-white">приход</td>
-                  <td className="p-3 border-r border-white">брак</td>
-                  <td className="p-3 border-r border-white">остаток</td>
-                  <td className="p-3 border-r border-white">продано</td>
-                  <td className="p-3 border-r border-white">цена</td>
-                  <td className="p-3 ">сумма</td>
+                  <td className="py-3 border-r border-white text-[10px] ">наименование</td>
+                  <td className="py-3 border-r border-white text-[10px] ">принято</td>
+                  <td className="py-3 border-r border-white text-[10px] ">приход</td>
+                  <td className="py-3 border-r border-white text-[10px] ">брак</td>
+                  <td className="py-3 border-r border-white text-[10px] ">остаток</td>
+                  <td className="py-3 border-r border-white text-[10px] ">продано</td>
+                  <td className="py-3 border-r border-white text-[10px] ">цена</td>
+                  <td className="py-3  text-[10px]">сумма</td>
                 </tr>
               </thead>
               <tbody>
@@ -157,7 +157,7 @@ function App() {
                       <input
                         min={0}
                       
-                        className="p-2  w-24  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.first}
                         onChange={(e) =>
                           dispatch({
@@ -202,7 +202,7 @@ function App() {
                       <input
                      
                         min={0}
-                        className="p-2  w-24  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2   w-8   bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.second}
                         onChange={(e) =>
                           dispatch({
@@ -244,7 +244,7 @@ function App() {
                       <input
                         min={0}
                    
-                        className="p-2  w-24  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.bad}
                         onChange={(e) =>
                           dispatch({
@@ -283,7 +283,7 @@ function App() {
                       <input
                     
                         min={0}
-                        className="p-2  w-24  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.remain}
                         onChange={(e) =>
                           dispatch({
