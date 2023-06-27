@@ -157,7 +157,7 @@ function App() {
                       <input
                         min={0}
                       
-                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.first}
                         onChange={(e) =>
                           dispatch({
@@ -202,7 +202,7 @@ function App() {
                       <input
                      
                         min={0}
-                        className="p-2   w-8   bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2   w-8  sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.second}
                         onChange={(e) =>
                           dispatch({
@@ -244,7 +244,7 @@ function App() {
                       <input
                         min={0}
                    
-                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.bad}
                         onChange={(e) =>
                           dispatch({
@@ -283,7 +283,7 @@ function App() {
                       <input
                     
                         min={0}
-                        className="p-2  w-8  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="p-2  w-8 sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.remain}
                         onChange={(e) =>
                           dispatch({
