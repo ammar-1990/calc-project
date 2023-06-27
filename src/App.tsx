@@ -78,7 +78,7 @@ function App() {
     <div className=" overflow-y-scroll h-screen  bg-slate-100">
       <div className="min-h-screen  flex justify-center p-3 flex-col ">
         <div className="w-full overflow-scroll mx-auto  myScroll">
-          <div ref={firstRef} className="pb-20 w-fit flex  sm:w-full flex-col">
+          <div ref={firstRef} className="pb-20 w-fit flex mx-auto  sm:w-full flex-col">
             <div className="p-4 font-bold text-xl text-center">
               TOTAL{" "}
               {state.myState.reduce(
@@ -157,7 +157,7 @@ function App() {
                       <input
                         min={0}
                       
-                        className="p-2  w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className=" w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.first}
                         onChange={(e) =>
                           dispatch({
@@ -202,7 +202,7 @@ function App() {
                       <input
                      
                         min={0}
-                        className="p-2   w-8  sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="   w-8  sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.second}
                         onChange={(e) =>
                           dispatch({
@@ -244,7 +244,7 @@ function App() {
                       <input
                         min={0}
                    
-                        className="p-2  w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="  w-8 sm:w-12  bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.bad}
                         onChange={(e) =>
                           dispatch({
@@ -283,7 +283,7 @@ function App() {
                       <input
                     
                         min={0}
-                        className="p-2  w-8 sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
+                        className="  w-8 sm:w-12 bg-transparent outline-none focus:bg-slate-200 duration-200 rounded-md"
                         value={el.remain}
                         onChange={(e) =>
                           dispatch({
