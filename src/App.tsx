@@ -1,4 +1,4 @@
-import { useReducer, useRef } from "react";
+import { useReducer, useRef,useEffect } from "react";
 import {
   INITIA_STATE,
   myReducer,
@@ -10,6 +10,9 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 
 function App() {
+
+
+
   const [state, dispatch] = useReducer(myReducer, INITIA_STATE);
   const [secondState, secondDispatch] = useReducer(
     secondReducer,
@@ -64,6 +67,12 @@ function App() {
       pdf.save("Daily Task 2");
     });
   };
+
+
+  useEffect(()=>{
+  localStorage.setItem('myState',JSON.stringify(state))
+      },[state])
+
 
   return (
     <div className=" overflow-y-scroll h-screen  bg-slate-100">

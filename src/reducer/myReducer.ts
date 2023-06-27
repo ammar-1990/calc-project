@@ -30,6 +30,8 @@ type ACTION_TWO= {
 
 }
 
+
+
 type FIRST_ACTION = ACTION | ACTION_TWO
 
 
@@ -64,6 +66,8 @@ type SECOND_ACTION = {
   }
 }
 
+
+
 export const secondReducer=(state:TABLE,action:SECOND_ACTION)=>{
 switch(action.type)
 {
@@ -75,12 +79,7 @@ switch(action.type)
 
 
 
-
-
-
-
-
-export const INITIA_STATE: STATE = {
+const FIRST_VALUE : STATE =  {
   myState: [
     {
       name: "пита",
@@ -303,7 +302,12 @@ export const INITIA_STATE: STATE = {
       price: 259,
     },
   ],
-};
+}
+
+
+
+
+export const INITIA_STATE: STATE  = JSON.parse(localStorage.getItem('myState') as string)  || FIRST_VALUE;
 
 
 export const myReducer=(state:STATE,action:FIRST_ACTION)=>{
@@ -322,7 +326,11 @@ else {
 
 
 
-        case "RESET" : return {myState:INITIA_STATE.myState.map((el,i)=>({...el,first:state.myState[i].remain}))}
+        case "RESET" : return {myState:FIRST_VALUE.myState.map((el,i)=>({...el,first:state.myState[i].remain}))}
+
+ 
+
+
 
         
 
