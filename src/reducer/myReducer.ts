@@ -106,7 +106,7 @@ const FIRST_VALUE : STATE =  {
       second: '',
       bad: '',
       remain: '',
-      price: 189,
+      price: 199,
     },
     {
       name: "сырный лаваш",
@@ -294,12 +294,20 @@ const FIRST_VALUE : STATE =  {
       price: 75,
     },
     {
-      name: "котлеты",
+      name: "котлеты г",
       first: '',
       second: '',
       bad: '',
       remain: '',
       price: 259,
+    },
+    {
+      name: "котлеты к",
+      first: '',
+      second: '',
+      bad: '',
+      remain: '',
+      price: 239,
     },
   ],
 }
